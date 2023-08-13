@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+* {
+  padding: 0;
+  margin: 0; }
+
+.header {
+  min-height: 9vh; }
+  .header .header__logo {
+    height: 70px; }
+
+.main {
+  min-height: 80vh;
+  margin: 15px;
+  font-family: "Montserrat", sans-serif; }
+  .main .main__whatsapp {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem; }
+    .main .main__whatsapp img {
+      width: 90px;
+      opacity: .8;
+      transition: .5s ease; }
+    .main .main__whatsapp img:hover {
+      cursor: pointer;
+      opacity: 1;
+      filter: contrast(130%); }
+  .main .main__cards-nuevos #ads, .main .main__cards-usados #ads {
+    margin: 30px 0 30px 0; }
+  .main .main__cards-nuevos #ads .card-notify-badge, .main .main__cards-usados #ads .card-notify-badge {
+    position: absolute;
+    left: -10px;
+    top: -20px;
+    background: #f2d900;
+    text-align: center;
+    border-radius: 30px 30px 30px 30px;
+    color: #000;
+    padding: 5px 10px;
+    font-size: 14px; }
+  .main .main__cards-nuevos #ads .card-notify-year, .main .main__cards-usados #ads .card-notify-year {
+    position: absolute;
+    right: -10px;
+    top: -20px;
+    background: #ff4444;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    width: 50px;
+    height: 50px;
+    padding: 15px 0 0 0; }
+  .main .main__cards-nuevos #ads .card-detail-badge, .main .main__cards-usados #ads .card-detail-badge {
+    background: #f2d900;
+    text-align: center;
+    border-radius: 30px 30px 30px 30px;
+    color: #000;
+    padding: 5px 10px;
+    font-size: 14px; }
+  .main .main__cards-nuevos #ads .card:hover, .main .main__cards-usados #ads .card:hover {
+    background: #fff;
+    box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15);
+    border-radius: 4px;
+    transition: all 0.3s ease; }
+  .main .main__cards-nuevos #ads .card-image-overlay, .main .main__cards-usados #ads .card-image-overlay {
+    font-size: 20px; }
+  .main .main__cards-nuevos #ads .card-image-overlay span, .main .main__cards-usados #ads .card-image-overlay span {
+    display: inline-block; }
+  .main .main__cards-nuevos #ads .ad-btn, .main .main__cards-usados #ads .ad-btn {
+    text-transform: uppercase;
+    width: 150px;
+    height: 40px;
+    border-radius: 80px;
+    font-size: 16px;
+    line-height: 35px;
+    text-align: center;
+    border: 3px solid #e6de08;
+    display: block;
+    text-decoration: none;
+    margin: 20px auto 1px auto;
+    color: #000;
+    overflow: hidden;
+    position: relative;
+    background-color: #e6de08; }
+  .main .main__cards-nuevos #ads .ad-btn:hover, .main .main__cards-usados #ads .ad-btn:hover {
+    background-color: #e6de08;
+    color: #1e1717;
+    border: 2px solid #e6de08;
+    background: transparent;
+    transition: all 0.3s ease;
+    box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15); }
+  .main .main__cards-nuevos #ads .ad-title h5, .main .main__cards-usados #ads .ad-title h5 {
+    text-transform: uppercase;
+    font-size: 18px; }
+
+.footer {
+  min-height: 20vh; }
+
+.main .main__contacto {
+  width: 90%;
+  margin: auto; }
+
+.main .main__titulo-financiacion {
+  padding: 3rem 12rem; }
+
+.main .grid {
+  margin: 1px;
+  grid-gap: 1rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "area-1 area-1-img"
+ "area-2-img area-2"
+ "area-3 area-3-img"
+ "area-4-img area-4"; }
+  .main .grid .grid__img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+  .main .grid .grid__text {
+    padding: 2rem 7rem;
+    text-align: center;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: larger;
+    color: #8b3737c5;
+    background-color: #bac9a4a9; }
+  .main .grid .grid__area-1 {
+    grid-area: area-1; }
+  .main .grid .grid__area-1-img {
+    grid-area: area-1-img;
+    background-image: url("https://andigital.com.ar/media/k2/items/cache/f4467b92df2c973ad438e25fddf5d764_XL.jpg"); }
+  .main .grid .grid__area-2 {
+    grid-area: area-2; }
+  .main .grid .grid__area-2-img {
+    grid-area: area-2-img;
+    background-image: url("https://d31dn7nfpuwjnm.cloudfront.net/images/valoraciones/0034/6063/Mejores_prestamos_prendarios_para_autos_2019.jpg?1563825869"); }
+  .main .grid .grid__area-3 {
+    grid-area: area-3; }
+  .main .grid .grid__area-3-img {
+    grid-area: area-3-img;
+    background-image: url("https://static.wixstatic.com/media/648ad0_5e4a356604d5479abf383171c954d628~mv2.jpg/v1/fill/w_498,h_332,al_c,q_85,usm_0.66_1.00_0.01/648ad0_5e4a356604d5479abf383171c954d628~mv2.jpg"); }
+  .main .grid .grid__area-4 {
+    grid-area: area-4; }
+  .main .grid .grid__area-4-img {
+    grid-area: area-4-img;
+    background-image: url("https://i1.wp.com/generamas.com/wp-content/uploads/2019/05/56c9a22f8d466d6ab2c07e2e081d-1449321.jpgd_.jpeg?fit=1024%2C684&ssl=1"); }
+
+@media (max-width: 767px) {
+  .main .grid {
+    margin: 1px;
+    grid-gap: 1rem 0;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(1, 0.8fr);
+    grid-template-rows: repeat(8, 0.4fr);
+    grid-template-areas: "area-1-img"
+ "area-1"
+ "area-2-img"
+ "area-2"
+ "area-3-img"
+ "area-3"
+ "area-4-img"
+ "area-4"; }
+  .main .grid__area-1 {
+    grid-area: area-1; }
+  .main .grid__area-1-img {
+    grid-area: area-1-img;
+    background-image: url("https://andigital.com.ar/media/k2/items/cache/f4467b92df2c973ad438e25fddf5d764_XL.jpg"); }
+  .main .grid__area-2 {
+    grid-area: area-2; }
+  .main .grid__area-2-img {
+    grid-area: area-2-img;
+    background-image: url("https://d31dn7nfpuwjnm.cloudfront.net/images/valoraciones/0034/6063/Mejores_prestamos_prendarios_para_autos_2019.jpg?1563825869"); }
+  .main .grid__area-3 {
+    grid-area: area-3; }
+  .main .grid__area-3-img {
+    grid-area: area-3-img;
+    background-image: url("https://static.wixstatic.com/media/648ad0_5e4a356604d5479abf383171c954d628~mv2.jpg/v1/fill/w_498,h_332,al_c,q_85,usm_0.66_1.00_0.01/648ad0_5e4a356604d5479abf383171c954d628~mv2.jpg"); }
+  .main .grid__area-4 {
+    grid-area: area-4; }
+  .main .grid__area-4-img {
+    grid-area: area-4-img;
+    background-image: url("https://i1.wp.com/generamas.com/wp-content/uploads/2019/05/56c9a22f8d466d6ab2c07e2e081d-1449321.jpgd_.jpeg?fit=1024%2C684&ssl=1"); }
+  .main .grid__img {
+    background-size: contain; }
+  .main .grid__text {
+    padding: 2rem;
+    font-size: small;
+    color: #b19292fa; } }
+
+@media (max-width: 1024px) {
+  .main .grid__text {
+    padding: 2rem;
+    font-size: medium; } }
+
+.main .main__titulo-financiacion {
+  padding: 2rem; }
+
+.main .main__carrusel {
+  width: 85%;
+  margin: auto; }
+  .main .main__carrusel .main__carrusel-general {
+    background-color: rgba(136, 136, 136, 0.277); }
+  .main .main__carrusel .main__carrusel-img img {
+    height: 70vh;
+    object-fit: contain; }
+
+.main .main__card-general {
+  max-width: 80vw;
+  margin: auto;
+  display: flex;
+  text-align: center;
+  justify-content: center; }
+  .main .main__card-general .main__card-width {
+    min-width: 20rem; }
+    .main .main__card-general .main__card-width a {
+      width: 270px;
+      height: 250px;
+      margin: auto;
+      padding-top: 20px; }
+    .main .main__card-general .main__card-width img {
+      object-fit: contain;
+      overflow: hidden;
+      height: 200px; }
+
+.main .main__titulo {
+  text-align: center;
+  font-family: "Lora", serif;
+  margin-top: 25px; }
+
+.main .main__opiniones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  margin: 5rem; }
+  .main .main__opiniones .card {
+    width: 18rem; }
+
+@media (max-width: 767px) {
+  .main .main__carrusel-img img {
+    height: 50vh;
+    object-fit: contain; } }
+
+.main .main__carrusel-nuevos {
+  display: flex;
+  width: 100%;
+  height: 400px; }
+  .main .main__carrusel-nuevos img {
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease; }
+  .main .main__carrusel-nuevos img:hover {
+    cursor: cell;
+    width: 350px;
+    opacity: 1;
+    filter: contrast(150%); }
+
+.main .main__h4-nuevos {
+  text-align: center; }
+
+.main .main__titulo-cards-nuevos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+  .main .main__titulo-cards-nuevos img {
+    width: 110px; }
+
+.main .card-image img {
+  height: 220px;
+  width: 100%; }
+
+@media (max-width: 767px) {
+  .main__carrusel-nuevos {
+    height: 200px; }
+    .main__carrusel-nuevos img:hover {
+      width: 200px; }
+  .cards-nuevos {
+    margin: 20px 0; } }
+
+.main .main__carrusel-postventa {
+  width: 95%;
+  margin: auto; }
+  .main .main__carrusel-postventa .text {
+    font-size: large;
+    color: #040000b1;
+    font-weight: bold; }
+    .main .main__carrusel-postventa .text h5 {
+      font-size: xx-large; }
+
+.main .main__cards-general {
+  margin: 2rem; }
+  .main .main__cards-general .main__cards-individual {
+    display: flex;
+    margin: 2rem 0;
+    justify-content: space-around;
+    text-align: center;
+    align-content: center;
+    background-color: rgba(189, 188, 188, 0.322);
+    align-items: center; }
+    .main .main__cards-general .main__cards-individual .main__text-card {
+      display: block;
+      padding: 2rem;
+      width: 50%; }
+    .main .main__cards-general .main__cards-individual .main__cards-img {
+      width: 50%;
+      overflow: hidden;
+      object-position: center; }
+
+.main .main__form-postventa {
+  margin: 2rem; }
+
+.main .main__h4-postventa {
+  text-align: center;
+  font-family: "Permanent Marker", cursive, sans-serif;
+  font-size: xx-large; }
+
+@media (max-width: 768px) {
+  .main .main__cards-individual {
+    flex-wrap: wrap; }
+    .main .main__cards-individual .main__text-card {
+      padding: 1rem;
+      width: 100%;
+      min-width: 77vw; }
+    .main .main__cards-individual .main__cards-img {
+      width: 100%;
+      min-width: 77vw; } }
+
+.main .main__h4-usados {
+  text-align: center;
+  font-family: "Permanent Marker", cursive, sans-serif;
+  font-size: xx-large; }
+
+@media (max-width: 767px) {
+  .cards-usados {
+    margin: 20px 0; } }
